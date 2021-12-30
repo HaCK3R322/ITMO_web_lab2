@@ -23,7 +23,7 @@ public class ControllerServlet extends HttpServlet {
         PrintWriter out = resp.getWriter();
 
         out.println("<html><body>");
-        out.println("<h1>ПОШЕЛ НАХУЙ</h1>");
+        out.println("<h1>Осуществляем переадресацию...</h1>");
         out.println("</body></html>");
     }
 

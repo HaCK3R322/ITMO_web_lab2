@@ -4,6 +4,6 @@
     <title>Title</title>
 </head>
 <body>
-    <h1>хуй пизда </h1>
+    <h1> </h1>
 </body>
 </html>
