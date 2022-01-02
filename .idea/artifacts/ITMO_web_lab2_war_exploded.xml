@@ -12,6 +12,7 @@
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="ITMO_web_lab2" />
+          <element id="jpa-descriptors" facet="ITMO_web_lab2/jpa/JPA" />
         </element>
       </element>
       <element id="directory" name="META-INF">
