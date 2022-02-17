@@ -20,9 +20,5 @@
     </h1>
     Here you go:<br><br>
     <img src="images/right_values.png">
-
-    <h1>This is your exception:</h1>
-    ${exceptionMessage}
-    end of exception
 </body>
 </html>
