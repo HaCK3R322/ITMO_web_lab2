@@ -3,10 +3,10 @@
 <html>
   <head>
     <title>JSP - Hello World</title>
-<%--    <meta http-equiv="Cache-Control" content="no-cache">--%>
     <link rel="stylesheet" href="css/index.css">
-<%--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>--%>
       <script src="js/mouse-tracker.js" defer></script>
+      <script src="js/formValidation.js" defer></script>
+      <script src="js/submit-buttons-randomization.js" defer></script>
   </head>
   <body>
     <div id="body-animated-background"></div>
@@ -19,33 +19,30 @@
       <p>Your form</p>
     </div>
     <div id="interactive-area-container">
-      <div id="interactive-area">
-<%--        <a href="error.jsp">Получить ошибку</a>--%>
-<%--        <a href="controller-servlet">Побежать на контроллер-сервлет</a>--%>
-      </div>
+      <div id="interactive-area"></div>
     </div>
     <div id="interactive-area-bottom-text-container">
       <p>Your opportunity</p>
     </div>
 
-    <form action="controllerServlet">
+    <form name="form" action="controllerServlet" method="GET" onsubmit="return validate()">
         <div class="select-container" id="select-X-container">
-            <select class="input-container" style="background-color: transparent">
+            <select name="X-select" class="input-container" style="background-color: transparent">
                 <option selected disabled>Select X</option>
-                <option value="">-2</option>
-                <option value="">-1.5</option>
-                <option value="">-1</option>
-                <option value="">-0.5</option>
-                <option value="">0</option>
-                <option value="">0.5</option>
-                <option value="">1</option>
-                <option value="">1.5</option>
-                <option value="">2</option>
+                <option value=-2>-2</option>
+                <option value="-1.5">-1.5</option>
+                <option value="-1">-1</option>
+                <option value="-0.5">-0.5</option>
+                <option value="-0">0</option>
+                <option value="0.5">0.5</option>
+                <option value="1">1</option>
+                <option value="1.5">1.5</option>
+                <option value="2">2</option>
             </select>
         </div>
 
         <div class="select-container" id="select-Y-container">
-            <textarea class="input-container" placeholder="Input Y"></textarea>
+            <textarea name="Y-textarea" class="input-container" placeholder="Input Y"></textarea>
         </div>
 
         <div class="select-container" id="select-R-container">
@@ -55,11 +52,12 @@
                         width: 100%;
                         top: 22%;
                         color: lightgreen;
-                        font-weight: 1000;
-                        font-size: xx-large;
+                        font-weight: 800;
+                        font-size: 32px;
                         text-align: center;
                         justify-content: center;
-
+                        text-shadow: 0 0 15px;
+                        font-family: Arial,serif;
             ">
                 Choose R
             </div>
@@ -81,6 +79,23 @@
                 }
             </script>
         </div>
+
+        <button type="submit" class="submit-button" style="right: 15%;top: 36%;">SEND</button>
+        <button type="submit" class="submit-button" id="submit-button-0">SEND</button>
+        <button type="submit" class="submit-button" id="submit-button-1">SEND</button>
+        <button type="submit" class="submit-button" id="submit-button-2">SEND</button>
+        <button type="submit" class="submit-button" id="submit-button-3">SEND</button>
+        <button type="submit" class="submit-button" id="submit-button-4">SEND</button>
+        <button type="submit" class="submit-button" id="submit-button-5">SEND</button>
+        <button type="submit" class="submit-button" id="submit-button-6">SEND</button>
+        <button type="submit" class="submit-button" id="submit-button-7">SEND</button>
+        <button type="submit" class="submit-button" id="submit-button-8">SEND</button>
+        <button type="submit" class="submit-button" id="submit-button-9">SEND</button>
+        <button type="submit" class="submit-button" id="submit-button-10">SEND</button>
+        <button type="submit" class="submit-button" id="submit-button-11">SEND</button>
+        <button type="submit" class="submit-button" id="submit-button-12">SEND</button>
+        <button type="submit" class="submit-button" id="submit-button-13">SEND</button>
+        <button type="submit" class="submit-button" id="submit-button-14">SEND</button>
     </form>
 
   </body>
